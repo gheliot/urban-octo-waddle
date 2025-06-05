@@ -1,32 +1,44 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>JE T'AIME</title>
-  <style>
-    body {
-      background-color: #fff0f5; /* light romantic pink */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-    }
-    h1 {
-      font-size: 5em;
-      color: #e60073; /* romantic red-pink */
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.1); }
-      100% { transform: scale(1); }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name - EPFL Student</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <h1>JE T'AIME ❤️</h1>
+  <header class="top-bar">
+    <div class="branding">
+      <h1>Your Name</h1>
+      <p>EPFL student</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <img src="images/theme1.png" alt="Current Project Image" />
+      <div class="section-content">
+        <h2>Current Project</h2>
+        <p>Working on cutting-edge AI models and experimenting with real-world datasets.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <img src="images/theme2.png" alt="Adventure Image" />
+      <div class="section-content">
+        <h2>Adventure</h2>
+        <p>Exploring new technologies, academic challenges, and outdoor experiences.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <img src="images/theme3.png" alt="Lifestyle Image" />
+      <div class="section-content">
+        <h2>Lifestyle</h2>
+        <p>Balancing study, creativity, health, and everything that makes life meaningful.</p>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
