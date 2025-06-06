@@ -1,0 +1,57 @@
+/* Base reset and font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Header */
+.top-bar {
+  padding: 40px 60px;
+}
+
+.branding h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.branding p {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-top: 5px;
+}
+
+/* Sections */
+.section {
+  padding: 60px;
+  border-top: 1px solid #222;
+}
+
+.section img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.section-content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.section-content p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
