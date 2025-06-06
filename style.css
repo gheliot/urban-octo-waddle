@@ -10,6 +10,12 @@ body {
   background-color: #000;
   color: #fff;
   line-height: 1.6;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 73.3%;
+  margin: 0 auto;
 }
 
 a {
@@ -19,39 +25,87 @@ a {
 
 /* Header */
 .top-bar {
-  padding: 40px 60px;
+  padding: 30px 40px;
 }
 
 .branding h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #fff;
 }
 
 .branding p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #aaa;
-  margin-top: 5px;
+  margin-top: 4px;
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.branding p.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* Sections */
 .section {
-  padding: 60px;
+  padding: 40px;
   border-top: 1px solid #222;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .section img {
-  width: 100%;
+  width: 60%;
   height: auto;
-  margin-bottom: 30px;
-  border-radius: 8px;
+  margin: 0 auto 20px;
+  display: block;
+  border-radius: 6px;
 }
 
 .section-content h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .section-content p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #ccc;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .section {
+    padding: 30px 20px;
+  }
+
+  .section img {
+    width: 90%;
+  }
+
+  .section-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .section-content p {
+    font-size: 0.9rem;
+  }
+
+  .branding h1 {
+    font-size: 1.3rem;
+  }
+
+  .branding p {
+    font-size: 0.9rem;
+  }
+
+  .top-bar {
+    padding: 20px;
+  }
 }
